@@ -58,5 +58,21 @@
           document.getElementById("loader").style.display = "none";
           document.getElementById("myDiv").style.display = "block";
         }
+        </script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script  type="text/javascript">
+        Toastify({
+            text: "New drawings coming soon",
+            duration: 3000,
+            //destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: 'right', // `left`, `center` or `right`
+            backgroundColor: "linear-gradient(to right, #9F4298, #D1AFD3)",
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            onClick: function(){} // Callback after click
+        }).showToast();
         </script> 
 </html>
